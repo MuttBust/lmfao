@@ -70,7 +70,7 @@ function Aiming.UpdateFOV()
     if (circle) then
         -- // Set Circle Properties
         circle.Visible = Aiming.ShowFOV
-        circle.Radius = (Aiming.FOV * 3)
+        circle.Radius = (Aiming.FOV * 10)
         circle.Position = Vector2new(Mouse.X, Mouse.Y + GetGuiInset(GuiService).Y)
         circle.NumSides = Aiming.FOVSides
         circle.Color = Aiming.FOVColour
